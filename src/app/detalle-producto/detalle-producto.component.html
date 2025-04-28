@@ -4,4 +4,5 @@
     <h3> {{ producto.name }} </h3>
     <h4> {{ producto.price | currency }} </h4>
     <p> {{ producto.description }} </p>
+    <button type="button" (click)="agregarAlCarrito(producto)">Comprar</button>
 </div>
