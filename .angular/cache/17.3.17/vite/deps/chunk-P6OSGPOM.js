@@ -1,6 +1,6 @@
 import {
   withHttpTransferCache
-} from "./chunk-CYNLGKA4.js";
+} from "./chunk-6AFI2X7C.js";
 import {
   CommonModule,
   DOCUMENT,
@@ -11,7 +11,7 @@ import {
   isPlatformServer,
   parseCookieValue,
   setRootDomAdapter
-} from "./chunk-UCKP3QBC.js";
+} from "./chunk-SMGYTYCX.js";
 import {
   APP_ID,
   ApplicationModule,
@@ -69,7 +69,7 @@ import {
   ɵɵdefineInjector,
   ɵɵdefineNgModule,
   ɵɵinject
-} from "./chunk-UJSJSMXL.js";
+} from "./chunk-B2QM4TKG.js";
 
 // node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs
 var GenericBrowserDomAdapter = class extends DomAdapter {
@@ -962,8 +962,7 @@ var KeyEventsPlugin = class _KeyEventsPlugin extends EventManagerPlugin {
       keycode = event.code;
       key = "code.";
     }
-    if (keycode == null || !keycode)
-      return false;
+    if (keycode == null || !keycode) return false;
     keycode = keycode.toLowerCase();
     if (keycode === " ") {
       keycode = "space";
@@ -1183,8 +1182,7 @@ var Meta = class _Meta {
    * the new element if no match is found, or `null` if the tag parameter is not defined.
    */
   addTag(tag, forceCreation = false) {
-    if (!tag)
-      return null;
+    if (!tag) return null;
     return this._getOrCreateElement(tag, forceCreation);
   }
   /**
@@ -1196,8 +1194,7 @@ var Meta = class _Meta {
    * @returns The matching elements if found, or the new elements.
    */
   addTags(tags, forceCreation = false) {
-    if (!tags)
-      return [];
+    if (!tags) return [];
     return tags.reduce((result, tag) => {
       if (tag) {
         result.push(this._getOrCreateElement(tag, forceCreation));
@@ -1212,8 +1209,7 @@ var Meta = class _Meta {
    * @returns The matching element, if any.
    */
   getTag(attrSelector) {
-    if (!attrSelector)
-      return null;
+    if (!attrSelector) return null;
     return this._doc.querySelector(`meta[${attrSelector}]`) || null;
   }
   /**
@@ -1223,8 +1219,7 @@ var Meta = class _Meta {
    * @returns The matching elements, if any.
    */
   getTags(attrSelector) {
-    if (!attrSelector)
-      return [];
+    if (!attrSelector) return [];
     const list = this._doc.querySelectorAll(`meta[${attrSelector}]`);
     return list ? [].slice.call(list) : [];
   }
@@ -1238,8 +1233,7 @@ var Meta = class _Meta {
    * @return The modified element.
    */
   updateTag(tag, selector) {
-    if (!tag)
-      return null;
+    if (!tag) return null;
     selector = selector || this._parseSelector(tag);
     const meta = this.getTag(selector);
     if (meta) {
@@ -1268,8 +1262,7 @@ var Meta = class _Meta {
     if (!forceCreation) {
       const selector = this._parseSelector(meta);
       const elem = this.getTags(selector).filter((elem2) => this._containsAttributes(meta, elem2))[0];
-      if (elem !== void 0)
-        return elem;
+      if (elem !== void 0) return elem;
     }
     const element = this._dom.createElement("meta");
     this._setMetaElementAttributes(meta, element);
@@ -1742,8 +1735,7 @@ var DomSanitizerImpl = class _DomSanitizerImpl extends DomSanitizer {
     this._doc = _doc;
   }
   sanitize(ctx, value) {
-    if (value == null)
-      return null;
+    if (value == null) return null;
     switch (ctx) {
       case SecurityContext.NONE:
         return value;
@@ -1938,4 +1930,4 @@ export {
    * License: MIT
    *)
 */
-//# sourceMappingURL=chunk-HQBM6QYR.js.map
+//# sourceMappingURL=chunk-P6OSGPOM.js.map
